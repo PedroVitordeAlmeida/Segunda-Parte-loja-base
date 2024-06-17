@@ -47,12 +47,29 @@ body{
 .Seção1 {
     display: flex;
     justify-content: center;
-
+    
 }
 
-.imagemmain {
-    width: 500px;
-    padding: 20px;
+.imagemmain1 {
+    width: 286px;
+    height: 143px;
+    padding: 10px 0 0 ;
+    margin: 127px 0 127px 0;
+    padding-right: 30px;
+    
+}
+
+.imagemmain2 {
+    width: 315px;
+    height: 157px;
+    padding: 10px 0 0 ;
+    margin: 127px 0 127px 0
+}
+
+.imagemmain3 {
+    width: 351px;
+    height: 234px;
+    margin: 100px 0 127px 0
 }
 
 .LabelStock {
@@ -73,6 +90,7 @@ body{
     color: black;
     width: 100%;
 }
+
 .paragrafo1 {
     color:  #9e9ea2;
     display: flex;
@@ -95,7 +113,7 @@ body{
 .Seção3 {
     display: flex;
     justify-content: center;
-    padding-bottom: 200px;
+    padding-bottom: 144px;
 }
 
 .Botão {
