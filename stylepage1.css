@@ -1,119 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Reset e estilos básicos */
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
     box-sizing: border-box;
-
 }
-                                                                                                                      
-                                    /*Menu de Navegação1*/ 
-body{
+
+body {
+    font-family: "Montserrat", sans-serif;
     background-color: black;
+    color: white;
 }
 
+/* Menu de Navegação */
 .Navegação {
     background-color: #161617;
     height: 40px;
     display: flex;
-    justify-content: center;
-    gap: 43px;
-    padding: 12px;
+    justify-content: space-around;
+    align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+
 }
 
 .botoesnav1 {
-    display: flex;
-    color: white;
     font-family: "Archivo Black", sans-serif;
-    font-size: 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
 }
 
 .botoesnav {
+    font-size: 12px;
     color: #9e9ea2;
-    font-family: "Montserrat", sans-serif;
-    font-size: 11px;
+    text-decoration: none;
+    margin-left: 20px;
 }
 
-                                    /*Meio da Pagina1*/
-
-                            
+/* Conteúdo principal */
 .HomeMain {
-    background-color: black;
+    padding-top: 80px; /* Para compensar a altura do menu fixo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
 .Seção1 {
     display: flex;
     justify-content: center;
-    
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
-.imagemmain1 {
-    width: 286px;
-    height: 143px;
-    padding: 10px 0 0 ;
-    margin: 127px 0 127px 0;
-    padding-right: 30px;
-    
-}
-
-.imagemmain2 {
-    width: 315px;
-    height: 157px;
-    padding: 10px 0 0 ;
-    margin: 127px 0 127px 0
-}
-
-.imagemmain3 {
-    width: 351px;
-    height: 234px;
-    margin: 100px 0 127px 0
+.imagemmain1, .imagemmain2, .imagemmain3 {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Define uma altura máxima para as imagens */
+    padding-top: 40px;
 }
 
 .LabelStock {
-    color: white;
     font-family: "Archivo Black", sans-serif;
-    display: flex;
-    justify-content: center;
     font-size: 28px;
-
+    margin-bottom: 20px;
 }
 
-.Seção2{
-    padding-bottom: 25px;
-    font-family: "Montserrat", sans-serif;
+.Seção2 {
+    padding: 0 20px;
+    margin-bottom: 40px;
 }
 
-.divisaoprincipal {
-    color: black;
-    width: 100%;
-}
-
-.paragrafo1 {
+.paragrafo1, .paragrafo2, .paragrafo3 {
     color:  #9e9ea2;
-    display: flex;
-    justify-content: center;
-    padding: 24px 0 0 0 ;
-}
-
-.paragrafo2 {
-    color:  #9e9ea2;
-    display: flex;
-    justify-content: center;
-}
-
-.paragrafo3 {
-    color:  #9e9ea2;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .Seção3 {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 144px;
+    margin-bottom: 80px;
 }
 
 .Botão {
@@ -121,33 +92,40 @@ body{
     color: white;
     width: 250px;
     border-radius: 100px;
-    padding: 10px;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    border-color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid white;
+    transition: 2s;
 }
 
 .Botão:hover {
-    background: white;
+    background-color: white;
     color: black;
+    border-color: black;
+    transition: 2s;
 }
 
-.footerfinal{
+/* Rodapé */
+.footerfinal {
     background-color: #161617;
     height: 40px;
     display: flex;
-    justify-content: space-between;
-    padding: 12px;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
 }
 
 .labelfooter {
-    font-size: 10px;
-    font-family:"Montserrat", sans-serif; 
     color: white;
+    font-size: 14px;
 }
 
 .insta {
     color: white;
-
+    font-size: 20px;
+    margin-left: 10px;
 }
